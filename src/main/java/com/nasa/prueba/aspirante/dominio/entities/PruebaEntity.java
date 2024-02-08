@@ -1,6 +1,8 @@
 package com.nasa.prueba.aspirante.dominio.entities;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -9,6 +11,7 @@ import java.util.Date;
 @Entity
 @Table(name = "nasa_content")
 @Data
+@NoArgsConstructor
 public class PruebaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,11 +1,16 @@
 package com.nasa.prueba.aspirante.dominio.dto;
 
-import lombok.Data;
 
-import java.util.Collection;
-import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ApiResponseDTO {
-    List<ItemDTO> items;
+
+    CollectionDTO collection;
+
 }

@@ -5,12 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DataDTO {
-    private String center;
-    private String title;
-    @JsonProperty("nasa_id")
-    private String nasaId;
+public class CollectionDTO {
+    List<ItemDTO> items;
 }
