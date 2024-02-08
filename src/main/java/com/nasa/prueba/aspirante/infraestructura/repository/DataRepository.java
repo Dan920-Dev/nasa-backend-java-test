@@ -1,13 +1,13 @@
 package com.nasa.prueba.aspirante.infraestructura.repository;
 
-import com.nasa.prueba.aspirante.dominio.entities.PruebaEntity;
+import com.nasa.prueba.aspirante.dominio.entities.DataEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface PruebaInterfaz extends JpaRepository<PruebaEntity, Long> {
+public interface DataRepository extends JpaRepository<DataEntity, Long> {
 
-    List<PruebaEntity> findAllByOrderByIdDesc();
+    List<DataEntity> findAllByOrderByIdDesc();
 }

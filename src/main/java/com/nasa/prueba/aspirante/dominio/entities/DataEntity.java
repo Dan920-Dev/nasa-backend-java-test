@@ -1,6 +1,5 @@
 package com.nasa.prueba.aspirante.dominio.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -12,7 +11,7 @@ import java.util.Date;
 @Table(name = "nasa_content")
 @Data
 @NoArgsConstructor
-public class PruebaEntity {
+public class DataEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
