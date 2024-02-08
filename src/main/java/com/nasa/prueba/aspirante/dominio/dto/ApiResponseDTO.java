@@ -7,6 +7,5 @@ import java.util.List;
 
 @Data
 public class ApiResponseDTO {
-    private CollectionDTO collection;
-    private List<ItemDTO> items;
+    List<ItemDTO> items;
 }
