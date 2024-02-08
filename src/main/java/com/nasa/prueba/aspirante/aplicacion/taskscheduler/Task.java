@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @AllArgsConstructor
-public class PruebaTask {
+public class Task {
 
     private PruebaClienteRest test;
     private DataImpl dataService;

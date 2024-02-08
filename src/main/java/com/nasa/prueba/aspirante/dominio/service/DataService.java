@@ -1,7 +1,7 @@
 package com.nasa.prueba.aspirante.dominio.service;
 
 import com.nasa.prueba.aspirante.dominio.dto.ApiResponseDTO;
-import com.nasa.prueba.aspirante.dominio.entities.PruebaEntity;
+import com.nasa.prueba.aspirante.dominio.entities.DataEntity;
 
 import java.util.List;
 
@@ -9,5 +9,5 @@ public interface DataService {
 
     void save(ApiResponseDTO response);
 
-    List<PruebaEntity> getAll();
+    List<DataEntity> getAll();
 }
