@@ -7,6 +7,8 @@ import com.nasa.prueba.aspirante.infraestructura.repository.PruebaInterfaz;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DataImpl implements DataService {
     @Autowired
@@ -22,6 +24,11 @@ public class DataImpl implements DataService {
         newData.setNasaId(response.getCollection().getItems().get(0).getData().get(0).getNasaId());
 
         repository.save(newData);
+    }
+
+    @Override
+    public List<PruebaEntity> getAll(){
+        return repository.findAllByOrderByIdDesc();
     }
 
 }
